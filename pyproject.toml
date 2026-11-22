@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyboard-layout-optimization"
+version = "0.1.0"
+description = "Common benchmark for heuristic keyboard layout optimization"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0,<3",
+  "nltk>=3.9,<4",
+  "matplotlib>=3.9,<4",
+  "pandas>=2.2,<3",
+  "scipy>=1.14,<2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
