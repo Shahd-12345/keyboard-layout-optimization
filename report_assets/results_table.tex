@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\caption{Held-Out Brown Corpus Results Over 30 Matched Runs}
+\label{tab:main-results}
+\centering
+\small
+\begin{tabular}{lcccc}
+\hline
+Method & Mean Train Cost & Mean Test Cost $\pm$ SD & Test Improvement & Median Runtime (s) \\
+\hline
+QWERTY       & 3.2491 & 3.2514                 & 0.00\%  & --    \\
+Random Search& 2.4044 & 2.4030 $\pm$ 0.0393   & 26.09\% & 0.383 \\
+Standard GA  & 1.9866 & 1.9836 $\pm$ 0.0217   & 38.99\% & 0.556 \\
+Adaptive GA  & 1.9871 & 1.9840 $\pm$ 0.0140   & 38.98\% & 0.660 \\
+Standard SA  & 1.9467 & 1.9430 $\pm$ 0.0158   & 40.24\% & 0.385 \\
+\textbf{Adaptive SA} & \textbf{1.9383} & \textbf{1.9352 $\pm$ 0.0163} & \textbf{40.48\%} & \textbf{0.383} \\
+\hline
+\end{tabular}
+\vspace{2pt}
+
+\footnotesize Each stochastic method received 10,000 objective evaluations per
+run. Lower cost is better. Training and testing matrices were normalized
+independently.
+\end{table*}
+
