@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+results/smoke_suite/
+results/smoke_notebook/
+*_results_bundle.zip
